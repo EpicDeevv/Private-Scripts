@@ -16,7 +16,7 @@ local Colors = {}
 
 -- Options
 local Default = {
-	MainColor = Color3.fromRGB(41, 74, 122):ToHex(),
+	MainColor = Color3.fromRGB(0, 0, 0):ToHex(),
 	MinSize = { X = 500, Y = 500 },
 	ToggleKey = "RightShift",
 	CanResize = true,
