@@ -1,3 +1,2 @@
 game.Players.LocalPlayer:Kick("This Script Is Outdated. New Script Is Muscle Legends V3.")
-    return
 end
