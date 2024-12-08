@@ -1,2 +1,24 @@
-game.Players.LocalPlayer:Kick("This Script Is Outdated. New Script Is Muscle Legends V3.")
+-- -- Whitelist
+local whitelistedUsers =  {
+    "EpicDeevv",
+}
+
+-- check if player is whitelisted
+local function isWhitelisted(username)
+    for _, whitelisted in ipairs(whitelistedUsers) do
+        if username == whitelisted then
+            return true
+        end
+    end
+    return false
+end
+
+-- Get the username
+local player = game.Players.LocalPlayer
+local username = player.Name
+
+--if not whitelisted kick
+if not isWhitelisted(username) then
+    game.Players.LocalPlayer:Kick("Script Is Discontinued.")
+    return
 end
